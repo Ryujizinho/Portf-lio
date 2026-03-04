@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio | João Pedro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- camadas de fundo cyberpunk -->
+  <div class="neon-stripes" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--2" aria-hidden="true"></div>
+  <div class="bg-horizon" aria-hidden="true"></div>
+  <div class="bg-vignette" aria-hidden="true"></div>
+
+  <header class="page-header">
+    <h1 data-text="Portfólio João Pedro">Portfólio <span data-text="João Pedro">João Pedro</span></h1>
+    <p class="subtitle">Passe pelos cards usando as setas na tela ou as teclas <strong>←</strong> e <strong>→</strong>.</p>
+  </header>
+
+  <nav class="top-nav" aria-label="Navegação por seções">
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu" aria-controls="sideNav" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <div class="tabs" id="tabs" role="tablist" aria-label="Seções do portfólio"></div>
+  </nav>
+
+  <main class="carousel" aria-label="Carrossel de cards do portfólio">
+    <button class="nav-btn prev" type="button" aria-label="Card anterior">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="viewport" tabindex="0" role="region" aria-roledescription="carrossel" aria-label="Cards" aria-live="polite">
+      <div class="track" id="track">
+
+        <section class="card" data-title="Sobre">
+          <div class="card-top">
+            <div class="eyebrow">Apresentação</div>
+            <h2>Sobre mim</h2>
+          </div>
+          <dl class="info-list">
+            <div><dt>Nome</dt><dd>João Pedro</dd></div>
+            <div><dt>Idade</dt><dd>21</dd></div>
+            <div><dt>Nacionalidade</dt><dd>Brasileiro</dd></div>
+          </dl>
+          <p class="hint">Dica: também dá pra navegar com <strong>←</strong> <strong>→</strong> ou arrastando no celular.</p>
+        </section>
+
+        <section class="card" data-title="Competências">
+          <div class="card-top">
+            <div class="eyebrow">Skills</div>
+            <h2>Competências</h2>
+          </div>
+          <div class="chips" aria-label="Lista de competências">
+            <span class="chip">Desenvolvimento Web</span>
+            <span class="chip">Full-Stack</span>
+            <span class="chip">Design Gráfico</span>
+          </div>
+        </section>
+
+        <section class="card" data-title="Projetos">
+          <div class="card-top">
+            <div class="eyebrow">Portfólio</div>
+            <h2>Projetos</h2>
+          </div>
+          <ul class="project-list">
+            <li>
+              <div class="project-name">[Projeto 01]</div>
+              <div class="project-meta">Stack • Link • Descrição curta</div>
+            </li>
+            <li>
+              <div class="project-name">[Projeto 02]</div>
+              <div class="project-meta">Stack • Link • Descrição curta</div>
+            </li>
+            <li>
+              <div class="project-name">[Projeto 03]</div>
+              <div class="project-meta">Stack • Link • Descrição curta</div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card" data-title="Programas">
+          <div class="card-top">
+            <div class="eyebrow">Apps</div>
+            <h2>PROGRAMAS</h2>
+          </div>
+          <ul class="project-list" aria-label="Lista de programas">
+            <li>
+              <div class="project-name">[Programa 01]</div>
+              <div class="project-meta">Linguagens/Stack • Link • Descrição curta</div>
+            </li>
+            <li>
+              <div class="project-name">[Programa 02]</div>
+              <div class="project-meta">Linguagens/Stack • Link • Descrição curta</div>
+            </li>
+            <li>
+              <div class="project-name">[Programa 03]</div>
+              <div class="project-meta">Linguagens/Stack • Link • Descrição curta</div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card" data-title="Contato">
+          <div class="card-top">
+            <div class="eyebrow">Vamos conversar</div>
+            <h2>Contato</h2>
+          </div>
+
+          <div class="contact-grid">
+
+            <!-- GitHub -->
+            <a class="contact contact--link" href="https://github.com/Ryujizinho" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </span>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a class="contact contact--link" href="https://www.linkedin.com/in/jo%C3%A3o-pedro-da-silva-soares-72253a293/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </span>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </span>
+            </a>
+
+            <!-- Behance -->
+            <a class="contact contact--link" href="https://www.behance.net/joopedrod28" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.7zM15.971 13h4.784c-.115-1.735-1.261-2.313-2.321-2.313-1.264 0-2.285.59-2.463 2.313zM8 12.065c2.517-.112 2.85-1.547 2.85-2.147 0-.803-.507-1.717-2.4-1.717H1.857V17H8.33c2.107 0 3.344-1.005 3.344-2.927 0-1.612-1.106-1.913-3.674-2.008zM3.5 9.7h3.5c1 0 1.5.522 1.5 1.3 0 .83-.5 1.3-1.5 1.3H3.5V9.7zm0 5.6h4c1.1 0 1.6-.55 1.6-1.4 0-.85-.5-1.4-1.6-1.4H3.5v2.8z"/>
+                </svg>
+              </span>
+              <span class="contact-label">Behance</span>
+              <span class="contact-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17L17 7M7 7h10v10"/>
+                </svg>
+              </span>
+            </a>
+
+            <!-- E-mail -->
+            <button class="contact contact--link contact--email" type="button" id="emailBtn" aria-label="Copiar e-mail">
+              <span class="contact-icon" aria-hidden="true">
+                <svg class="icon-envelope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="M2 8l10 7 10-7"/>
+                </svg>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6L9 17l-5-5"/>
+                </svg>
+              </span>
+              <span class="contact-label">E-mail</span>
+              <span class="email-action" id="emailAction" aria-live="polite">Clique aqui para copiar</span>
+            </button>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <button class="nav-btn next" type="button" aria-label="Próximo card">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="carousel-ui" aria-label="Navegação do carrossel">
+      <div class="counter" id="counter" aria-live="polite"></div>
+      <div class="dots" id="dots" role="tablist" aria-label="Selecionar card"></div>
+    </div>
+  </main>
+
+  <!-- Botão flutuante -->
+  <div class="theme-fab" id="themeFab">
+    <div class="theme-tooltip" id="themeLabel" aria-live="polite">ESCURO</div>
+    <label class="toggle-icon" aria-label="Alternar tema">
+      <input type="checkbox" id="themeToggle" />
+      <div class="icon-btn">
+        <svg class="icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </div>
+    </label>
+  </div>
+
+  <!-- Menu lateral (mobile) -->
+  <div class="side-overlay" id="sideOverlay" aria-hidden="true"></div>
+  <aside class="side-nav" id="sideNav" aria-label="Navegação lateral" aria-hidden="true">
+    <div class="side-nav-header">
+      <div class="side-title">Seções</div>
+      <button class="side-close" id="sideClose" type="button" aria-label="Fechar menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <div class="side-links" id="sideLinks"></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
